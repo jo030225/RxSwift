@@ -3,22 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F5425786A68EBBBD72C0D52 /* Pods_RxSwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122EDAE9817AF42F2BFA564D /* Pods_RxSwiftTest.framework */; };
 		BDA09E032685AA9500A6CB63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA09E022685AA9500A6CB63 /* AppDelegate.swift */; };
 		BDA09E052685AA9500A6CB63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA09E042685AA9500A6CB63 /* SceneDelegate.swift */; };
 		BDA09E072685AA9500A6CB63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA09E062685AA9500A6CB63 /* ViewController.swift */; };
 		BDA09E0A2685AA9500A6CB63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA09E082685AA9500A6CB63 /* Main.storyboard */; };
 		BDA09E0C2685AA9700A6CB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA09E0B2685AA9700A6CB63 /* Assets.xcassets */; };
 		BDA09E0F2685AA9700A6CB63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA09E0D2685AA9700A6CB63 /* LaunchScreen.storyboard */; };
-		BDA09E182685AAD700A6CB63 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = BDA09E172685AAD700A6CB63 /* RxRelay */; };
-		BDA09E1A2685AAD700A6CB63 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BDA09E192685AAD700A6CB63 /* RxSwift */; };
-		BDA09E1C2685AAD700A6CB63 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BDA09E1B2685AAD700A6CB63 /* RxCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		122EDAE9817AF42F2BFA564D /* Pods_RxSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A838CE432DEDA0E3720499 /* Pods-RxSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
+		59CD2F2D12C619BBBB6A036A /* Pods-RxSwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest.release.xcconfig"; sourceTree = "<group>"; };
 		BDA09DFF2685AA9500A6CB63 /* RxSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA09E022685AA9500A6CB63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDA09E042685AA9500A6CB63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +28,7 @@
 		BDA09E0B2685AA9700A6CB63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDA09E0E2685AA9700A6CB63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDA09E102685AA9700A6CB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA09E1D2685AB5A00A6CB63 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,20 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDA09E1C2685AAD700A6CB63 /* RxCocoa in Frameworks */,
-				BDA09E1A2685AAD700A6CB63 /* RxSwift in Frameworks */,
-				BDA09E182685AAD700A6CB63 /* RxRelay in Frameworks */,
+				8F5425786A68EBBBD72C0D52 /* Pods_RxSwiftTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		158648776D8B34C4FDFBEC74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				122EDAE9817AF42F2BFA564D /* Pods_RxSwiftTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		369C7C6D88C32B5A05635659 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13A838CE432DEDA0E3720499 /* Pods-RxSwiftTest.debug.xcconfig */,
+				59CD2F2D12C619BBBB6A036A /* Pods-RxSwiftTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BDA09DF62685AA9500A6CB63 = {
 			isa = PBXGroup;
 			children = (
 				BDA09E012685AA9500A6CB63 /* RxSwiftTest */,
 				BDA09E002685AA9500A6CB63 /* Products */,
+				369C7C6D88C32B5A05635659 /* Pods */,
+				158648776D8B34C4FDFBEC74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +89,7 @@
 				BDA09E0B2685AA9700A6CB63 /* Assets.xcassets */,
 				BDA09E0D2685AA9700A6CB63 /* LaunchScreen.storyboard */,
 				BDA09E102685AA9700A6CB63 /* Info.plist */,
+				BDA09E1D2685AB5A00A6CB63 /* MyPlayground.playground */,
 			);
 			path = RxSwiftTest;
 			sourceTree = "<group>";
@@ -80,20 +101,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDA09E132685AA9700A6CB63 /* Build configuration list for PBXNativeTarget "RxSwiftTest" */;
 			buildPhases = (
+				7B3ADAA4F5A952A0A55CB20C /* [CP] Check Pods Manifest.lock */,
 				BDA09DFB2685AA9500A6CB63 /* Sources */,
 				BDA09DFC2685AA9500A6CB63 /* Frameworks */,
 				BDA09DFD2685AA9500A6CB63 /* Resources */,
+				64482CF6A295CD9B6C00F96B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = RxSwiftTest;
-			packageProductDependencies = (
-				BDA09E172685AAD700A6CB63 /* RxRelay */,
-				BDA09E192685AAD700A6CB63 /* RxSwift */,
-				BDA09E1B2685AAD700A6CB63 /* RxCocoa */,
-			);
 			productName = RxSwiftTest;
 			productReference = BDA09DFF2685AA9500A6CB63 /* RxSwiftTest.app */;
 			productType = "com.apple.product-type.application";
@@ -121,9 +139,6 @@
 				Base,
 			);
 			mainGroup = BDA09DF62685AA9500A6CB63;
-			packageReferences = (
-				BDA09E162685AAD700A6CB63 /* XCRemoteSwiftPackageReference "RxSwift" */,
-			);
 			productRefGroup = BDA09E002685AA9500A6CB63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64482CF6A295CD9B6C00F96B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B3ADAA4F5A952A0A55CB20C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BDA09DFB2685AA9500A6CB63 /* Sources */ = {
@@ -297,6 +354,7 @@
 		};
 		BDA09E142685AA9700A6CB63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A838CE432DEDA0E3720499 /* Pods-RxSwiftTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +374,7 @@
 		};
 		BDA09E152685AA9700A6CB63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59CD2F2D12C619BBBB6A036A /* Pods-RxSwiftTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -355,35 +414,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		BDA09E162685AAD700A6CB63 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.2.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		BDA09E172685AAD700A6CB63 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BDA09E162685AAD700A6CB63 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		BDA09E192685AAD700A6CB63 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BDA09E162685AAD700A6CB63 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		BDA09E1B2685AAD700A6CB63 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BDA09E162685AAD700A6CB63 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BDA09DF72685AA9500A6CB63 /* Project object */;
 }
