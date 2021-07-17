@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BD8C69CE26A05BC200C01E99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C69CD26A05BC200C01E99 /* AppDelegate.swift */; };
 		BD8C69D026A05BC200C01E99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C69CF26A05BC200C01E99 /* SceneDelegate.swift */; };
-		BD8C69D226A05BC200C01E99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C69D126A05BC200C01E99 /* ViewController.swift */; };
 		BD8C69D526A05BC200C01E99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8C69D326A05BC200C01E99 /* Main.storyboard */; };
 		BD8C69D826A05BC200C01E99 /* RxSwiftMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD8C69D626A05BC200C01E99 /* RxSwiftMemo.xcdatamodeld */; };
 		BD8C69DA26A05BC400C01E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8C69D926A05BC400C01E99 /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 		BD8C69CA26A05BC200C01E99 /* RxSwiftMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8C69CD26A05BC200C01E99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD8C69CF26A05BC200C01E99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD8C69D126A05BC200C01E99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD8C69D426A05BC200C01E99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD8C69D726A05BC200C01E99 /* RxSwiftMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxSwiftMemo.xcdatamodel; sourceTree = "<group>"; };
 		BD8C69D926A05BC400C01E99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +59,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD4064A426A2D85F004FAA28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD4064A526A2D876004FAA28 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD8C69D326A05BC200C01E99 /* Main.storyboard */,
+				BD8C69DB26A05BC400C01E99 /* LaunchScreen.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BD4064A626A2D885004FAA28 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD4064A726A2D898004FAA28 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BD4064A826A2D8AB004FAA28 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
 		BD8C69C126A05BC200C01E99 = {
 			isa = PBXGroup;
 			children = (
@@ -82,12 +117,14 @@
 		BD8C69CC26A05BC200C01E99 /* RxSwiftMemo */ = {
 			isa = PBXGroup;
 			children = (
+				BD4064A826A2D8AB004FAA28 /* Scene */,
+				BD4064A726A2D898004FAA28 /* Service */,
+				BD4064A626A2D885004FAA28 /* ViewModel */,
+				BD4064A526A2D876004FAA28 /* ViewController */,
+				BD4064A426A2D85F004FAA28 /* Model */,
 				BD8C69CD26A05BC200C01E99 /* AppDelegate.swift */,
 				BD8C69CF26A05BC200C01E99 /* SceneDelegate.swift */,
-				BD8C69D126A05BC200C01E99 /* ViewController.swift */,
-				BD8C69D326A05BC200C01E99 /* Main.storyboard */,
 				BD8C69D926A05BC400C01E99 /* Assets.xcassets */,
-				BD8C69DB26A05BC400C01E99 /* LaunchScreen.storyboard */,
 				BD8C69DE26A05BC400C01E99 /* Info.plist */,
 				BD8C69D626A05BC200C01E99 /* RxSwiftMemo.xcdatamodeld */,
 			);
@@ -208,7 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8C69D226A05BC200C01E99 /* ViewController.swift in Sources */,
 				BD8C69D826A05BC200C01E99 /* RxSwiftMemo.xcdatamodeld in Sources */,
 				BD8C69CE26A05BC200C01E99 /* AppDelegate.swift in Sources */,
 				BD8C69D026A05BC200C01E99 /* SceneDelegate.swift in Sources */,
