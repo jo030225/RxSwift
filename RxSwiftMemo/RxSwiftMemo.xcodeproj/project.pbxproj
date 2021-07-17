@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BD4064AA26A2D993004FAA28 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4064A926A2D993004FAA28 /* Memo.swift */; };
+		BD4064AC26A2DABF004FAA28 /* MemoStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4064AB26A2DABF004FAA28 /* MemoStorageType.swift */; };
+		BD4064B026A2DBB2004FAA28 /* MeomoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4064AF26A2DBB2004FAA28 /* MeomoryStorage.swift */; };
 		BD8C69CE26A05BC200C01E99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C69CD26A05BC200C01E99 /* AppDelegate.swift */; };
 		BD8C69D026A05BC200C01E99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C69CF26A05BC200C01E99 /* SceneDelegate.swift */; };
 		BD8C69D526A05BC200C01E99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8C69D326A05BC200C01E99 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 		3029A7F7EE0FEB5C1FEB1075 /* Pods_RxSwiftMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		742143CC5AB2602B08C997F2 /* Pods-RxSwiftMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftMemo.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftMemo/Pods-RxSwiftMemo.release.xcconfig"; sourceTree = "<group>"; };
 		BD4064A926A2D993004FAA28 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		BD4064AB26A2DABF004FAA28 /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
+		BD4064AF26A2DBB2004FAA28 /* MeomoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeomoryStorage.swift; sourceTree = "<group>"; };
 		BD8C69CA26A05BC200C01E99 /* RxSwiftMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8C69CD26A05BC200C01E99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD8C69CF26A05BC200C01E99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,9 @@
 		BD4064A726A2D898004FAA28 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				BD4064AE26A2DB8A004FAA28 /* CoreDataStorage */,
+				BD4064AD26A2DB64004FAA28 /* MemoryStorage */,
+				BD4064AB26A2DABF004FAA28 /* MemoStorageType.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -97,6 +104,22 @@
 			children = (
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		BD4064AD26A2DB64004FAA28 /* MemoryStorage */ = {
+			isa = PBXGroup;
+			children = (
+				BD4064AF26A2DBB2004FAA28 /* MeomoryStorage.swift */,
+			);
+			path = MemoryStorage;
+			sourceTree = "<group>";
+		};
+		BD4064AE26A2DB8A004FAA28 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				BD8C69D626A05BC200C01E99 /* RxSwiftMemo.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
 			sourceTree = "<group>";
 		};
 		BD8C69C126A05BC200C01E99 = {
@@ -129,7 +152,6 @@
 				BD8C69CF26A05BC200C01E99 /* SceneDelegate.swift */,
 				BD8C69D926A05BC400C01E99 /* Assets.xcassets */,
 				BD8C69DE26A05BC400C01E99 /* Info.plist */,
-				BD8C69D626A05BC200C01E99 /* RxSwiftMemo.xcdatamodeld */,
 			);
 			path = RxSwiftMemo;
 			sourceTree = "<group>";
@@ -249,8 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD8C69D826A05BC200C01E99 /* RxSwiftMemo.xcdatamodeld in Sources */,
+				BD4064AC26A2DABF004FAA28 /* MemoStorageType.swift in Sources */,
 				BD8C69CE26A05BC200C01E99 /* AppDelegate.swift in Sources */,
 				BD8C69D026A05BC200C01E99 /* SceneDelegate.swift in Sources */,
+				BD4064B026A2DBB2004FAA28 /* MeomoryStorage.swift in Sources */,
 				BD4064AA26A2D993004FAA28 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
