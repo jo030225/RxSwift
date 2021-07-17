@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,14 +14,13 @@
 		BD8C69D826A05BC200C01E99 /* RxSwiftMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD8C69D626A05BC200C01E99 /* RxSwiftMemo.xcdatamodeld */; };
 		BD8C69DA26A05BC400C01E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8C69D926A05BC400C01E99 /* Assets.xcassets */; };
 		BD8C69DD26A05BC400C01E99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8C69DB26A05BC400C01E99 /* LaunchScreen.storyboard */; };
-		BD8C69E626A05C4D00C01E99 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BD8C69E526A05C4D00C01E99 /* RxSwift */; };
-		BD8C69E826A05C4D00C01E99 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = BD8C69E726A05C4D00C01E99 /* RxTest */; };
-		BD8C69EA26A05C4D00C01E99 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = BD8C69E926A05C4D00C01E99 /* RxRelay */; };
-		BD8C69EC26A05C4D00C01E99 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BD8C69EB26A05C4D00C01E99 /* RxCocoa */; };
-		BD8C69EE26A05C4D00C01E99 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = BD8C69ED26A05C4D00C01E99 /* RxBlocking */; };
+		C3C753FFCF808AEE2BE756BA /* Pods_RxSwiftMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3029A7F7EE0FEB5C1FEB1075 /* Pods_RxSwiftMemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272ECB7CBADC69FCA8FA94E8 /* Pods-RxSwiftMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftMemo.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftMemo/Pods-RxSwiftMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3029A7F7EE0FEB5C1FEB1075 /* Pods_RxSwiftMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		742143CC5AB2602B08C997F2 /* Pods-RxSwiftMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftMemo.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftMemo/Pods-RxSwiftMemo.release.xcconfig"; sourceTree = "<group>"; };
 		BD8C69CA26A05BC200C01E99 /* RxSwiftMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8C69CD26A05BC200C01E99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD8C69CF26A05BC200C01E99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,22 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8C69EA26A05C4D00C01E99 /* RxRelay in Frameworks */,
-				BD8C69E826A05C4D00C01E99 /* RxTest in Frameworks */,
-				BD8C69EC26A05C4D00C01E99 /* RxCocoa in Frameworks */,
-				BD8C69E626A05C4D00C01E99 /* RxSwift in Frameworks */,
-				BD8C69EE26A05C4D00C01E99 /* RxBlocking in Frameworks */,
+				C3C753FFCF808AEE2BE756BA /* Pods_RxSwiftMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25952CB3B22D38D6007E7E4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				272ECB7CBADC69FCA8FA94E8 /* Pods-RxSwiftMemo.debug.xcconfig */,
+				742143CC5AB2602B08C997F2 /* Pods-RxSwiftMemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6C5C442E097893446DC9454D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3029A7F7EE0FEB5C1FEB1075 /* Pods_RxSwiftMemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD8C69C126A05BC200C01E99 = {
 			isa = PBXGroup;
 			children = (
 				BD8C69CC26A05BC200C01E99 /* RxSwiftMemo */,
 				BD8C69CB26A05BC200C01E99 /* Products */,
+				25952CB3B22D38D6007E7E4A /* Pods */,
+				6C5C442E097893446DC9454D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,22 +101,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD8C69E126A05BC400C01E99 /* Build configuration list for PBXNativeTarget "RxSwiftMemo" */;
 			buildPhases = (
+				6465F11A6845F503F9BF16B2 /* [CP] Check Pods Manifest.lock */,
 				BD8C69C626A05BC200C01E99 /* Sources */,
 				BD8C69C726A05BC200C01E99 /* Frameworks */,
 				BD8C69C826A05BC200C01E99 /* Resources */,
+				A70D7DD73B25CDFF8203489A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = RxSwiftMemo;
-			packageProductDependencies = (
-				BD8C69E526A05C4D00C01E99 /* RxSwift */,
-				BD8C69E726A05C4D00C01E99 /* RxTest */,
-				BD8C69E926A05C4D00C01E99 /* RxRelay */,
-				BD8C69EB26A05C4D00C01E99 /* RxCocoa */,
-				BD8C69ED26A05C4D00C01E99 /* RxBlocking */,
-			);
 			productName = RxSwiftMemo;
 			productReference = BD8C69CA26A05BC200C01E99 /* RxSwiftMemo.app */;
 			productType = "com.apple.product-type.application";
@@ -130,9 +139,6 @@
 				Base,
 			);
 			mainGroup = BD8C69C126A05BC200C01E99;
-			packageReferences = (
-				BD8C69E426A05C4D00C01E99 /* XCRemoteSwiftPackageReference "RxSwift" */,
-			);
 			productRefGroup = BD8C69CB26A05BC200C01E99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6465F11A6845F503F9BF16B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftMemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A70D7DD73B25CDFF8203489A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftMemo/Pods-RxSwiftMemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftMemo/Pods-RxSwiftMemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftMemo/Pods-RxSwiftMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD8C69C626A05BC200C01E99 /* Sources */ = {
@@ -240,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -307,6 +355,7 @@
 		};
 		BD8C69E226A05BC400C01E99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 272ECB7CBADC69FCA8FA94E8 /* Pods-RxSwiftMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +375,7 @@
 		};
 		BD8C69E326A05BC400C01E99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 742143CC5AB2602B08C997F2 /* Pods-RxSwiftMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -365,45 +415,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		BD8C69E426A05C4D00C01E99 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.2.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		BD8C69E526A05C4D00C01E99 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BD8C69E426A05C4D00C01E99 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		BD8C69E726A05C4D00C01E99 /* RxTest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BD8C69E426A05C4D00C01E99 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxTest;
-		};
-		BD8C69E926A05C4D00C01E99 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BD8C69E426A05C4D00C01E99 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		BD8C69EB26A05C4D00C01E99 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BD8C69E426A05C4D00C01E99 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		BD8C69ED26A05C4D00C01E99 /* RxBlocking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BD8C69E426A05C4D00C01E99 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BD8C69D626A05BC200C01E99 /* RxSwiftMemo.xcdatamodeld */ = {
