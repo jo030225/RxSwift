@@ -11,6 +11,7 @@
 		BD2C6D8F26AAF743006D8209 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C6D8E26AAF743006D8209 /* Scene.swift */; };
 		BD2C6D9126AAF9A7006D8209 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C6D9026AAF9A7006D8209 /* SceneCoordinatorType.swift */; };
 		BD2C6D9326AAFA3C006D8209 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C6D9226AAFA3C006D8209 /* SceneCoordinator.swift */; };
+		BD2C6D9526AC3B61006D8209 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C6D9426AC3B61006D8209 /* CommonViewModel.swift */; };
 		BD4064AA26A2D993004FAA28 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4064A926A2D993004FAA28 /* Memo.swift */; };
 		BD4064AC26A2DABF004FAA28 /* MemoStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4064AB26A2DABF004FAA28 /* MemoStorageType.swift */; };
 		BD4064B026A2DBB2004FAA28 /* MeomoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4064AF26A2DBB2004FAA28 /* MeomoryStorage.swift */; };
@@ -38,6 +39,7 @@
 		BD2C6D8E26AAF743006D8209 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		BD2C6D9026AAF9A7006D8209 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		BD2C6D9226AAFA3C006D8209 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		BD2C6D9426AC3B61006D8209 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		BD4064A926A2D993004FAA28 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		BD4064AB26A2DABF004FAA28 /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
 		BD4064AF26A2DBB2004FAA28 /* MeomoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeomoryStorage.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				BD4064B726A3F82D004FAA28 /* MemoListViewModel.swift */,
 				BD4064B926A3F875004FAA28 /* MemoDetailViewModel.swift */,
 				BD4064BB26A3F89B004FAA28 /* MemoComposeViewModel.swift */,
+				BD2C6D9426AC3B61006D8209 /* CommonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				BD2C6D9126AAF9A7006D8209 /* SceneCoordinatorType.swift in Sources */,
 				BD4064B826A3F82D004FAA28 /* MemoListViewModel.swift in Sources */,
 				BD4064BA26A3F875004FAA28 /* MemoDetailViewModel.swift in Sources */,
+				BD2C6D9526AC3B61006D8209 /* CommonViewModel.swift in Sources */,
 				BD2C6D8D26AAF6E8006D8209 /* TransitionModel.swift in Sources */,
 				BD4064B226A3F757004FAA28 /* MemoListViewController.swift in Sources */,
 				BD4064B626A3F7A1004FAA28 /* MemoComposeViewController.swift in Sources */,
